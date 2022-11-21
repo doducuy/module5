@@ -13,10 +13,10 @@ function sumFibonacci() {
             break;
         }
     }
-    let sum:number=0;
+    let result:number=0;
     arr.forEach(function (value) {
-        sum+= value;
+        result+= value;
     })
-     console.log(sum);
+     console.log(result);
 }
 sumFibonacci();
