@@ -1,0 +1,59 @@
+<h3>Add villa</h3>
+<p>
+  <a>
+    Come back
+  </a>
+</p>
+<div id="form">
+  <form action="@{/facility/save}" method="post">
+    <input type="hidden">
+    <table>
+      <tr>
+        <td><span>Facility type</span></td>
+        <td><select>
+          <option value="1">villa</option>
+          <option value="2">room</option>
+          <option value="3">house</option>
+        </select></td>
+      </tr>
+      <tr>
+        <td><span>Name</span></td>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <td><span>Area</span></td>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <td><span>Cost</span></td>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <td><span>Max people</span></td>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <td><span>Rent type</span></td>
+        <td><select>
+          <option>ngày</option>
+          <option>tháng</option>
+          <option>năm</option>
+        </select></td>
+      </tr>
+      <tr>
+        <td><span>Standard room</span></td>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <td><span>Description other convenience</span></td>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <td><span>	Number of floors</span></td>
+        <td><input type="text"></td>
+      </tr>
+
+    </table>
+    <input type="submit" value="Save"/>
+  </form>
+</div>

@@ -1,0 +1,58 @@
+<h3>Add Customer</h3>
+<p>
+  <a>
+    Come back
+  </a>
+</p>
+<div id="form">
+  <form action="@{/customer/save}" method="post">
+    <input type="hidden">
+    <table class="table table-sm">
+      <tr>
+        <td><span>name</span></td>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <td><span>Date Of Birth</span></td>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <td><span>Gender</span></td>
+        <td>
+          <select>
+            <option value="">nam</option>
+            <option value="">nữ</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><span>Id Card</span></td>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <td><span>Phone Number</span></td>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <td><span>Email</span></td>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <td><span>Address</span></td>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <td><span>Customer Type</span></td>
+        <td>
+          <select>
+            <option>Diamond</option>
+            <option>Silver</option>
+            <option>Gold</option>
+          </select>
+        </td>
+      </tr>
+
+    </table>
+    <input type="submit" value="Save"/>
+  </form>
+</div>
