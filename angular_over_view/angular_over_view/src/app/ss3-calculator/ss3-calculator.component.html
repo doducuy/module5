@@ -1,0 +1,16 @@
+<h1>Máy Tính Đơn Giản</h1>
+<div class="all">
+  <div class="cal">
+    <h2>Máy Tính</h2>
+    <p>Number One: <input  [(ngModel)]="numOne"/></p>
+    <p>Number Two: <input  [(ngModel)]="numTwo"/></p>
+    <div class="but">
+      <button (click)="sum()">+</button>
+      <button (click)="subtraction()">-</button>
+      <button (click)="multiplication()">*</button>
+      <button (click)="division()">/</button>
+    </div>
+    <p class="result">Result: <label>{{result}}</label>  </p>
+  </div>
+</div>
+

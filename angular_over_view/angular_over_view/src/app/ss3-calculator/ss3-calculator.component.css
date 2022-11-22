@@ -1,0 +1,26 @@
+.cal{
+  text-align: center;
+  border: 1px solid;
+  width: 350px;
+}
+button{
+  margin: 5px;
+}
+.but{
+  display: flex;
+  justify-content: left;
+  margin-left: 130px;
+}
+.all{
+  display: flex;
+  justify-content: center;
+}
+.result{
+  display: flex;
+  justify-content: left;
+  margin-left: 45px;
+}
+label{
+  display: flex;
+  margin-left: 45px;
+}
