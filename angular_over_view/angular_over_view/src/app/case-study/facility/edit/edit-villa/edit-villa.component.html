@@ -1,0 +1,59 @@
+<h3>Edit villa</h3>
+<p>
+  <a>
+    Come back
+  </a>
+</p>
+<div id="form">
+  <form action="@{/facility/save}" method="post">
+    <input type="hidden">
+    <table>
+      <tr>
+        <td><span>Facility type</span></td>
+        <td><select>
+          <option value="1">villa</option>
+          <option value="2">house</option>
+          <option value="3">room</option>
+        </select></td>
+      </tr>
+      <tr>
+        <td><span>Name</span></td>
+        <td><input type="text" value="villa 01 style japan"></td>
+      </tr>
+      <tr>
+        <td><span>Area</span></td>
+        <td><input type="text" value="30m2"></td>
+      </tr>
+      <tr>
+        <td><span>Cost</span></td>
+        <td><input type="text" value="800k"></td>
+      </tr>
+      <tr>
+        <td><span>Max people</span></td>
+        <td><input type="text" value="6"></td>
+      </tr>
+      <tr>
+        <td><span>Rent type</span></td>
+        <td><select>
+          <option>ngày</option>
+          <option>tháng</option>
+          <option>năm</option>
+        </select></td>
+      </tr>
+      <tr>
+        <td><span>Standard room</span></td>
+        <td><input type="text" value="vip3" ></td>
+      </tr>
+      <tr>
+        <td><span>Description other convenience</span></td>
+        <td><input type="text" value="trên tường có cửu dương thành công"></td>
+      </tr>
+      <tr>
+        <td><span>	Number of floors</span></td>
+        <td><input type="text" value="3"></td>
+      </tr>
+
+    </table>
+    <input type="submit" value="Save"/>
+  </form>
+</div>
