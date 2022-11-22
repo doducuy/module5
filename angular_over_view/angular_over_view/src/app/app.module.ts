@@ -18,6 +18,8 @@ import { EditHouseComponent } from './case-study/facility/edit/edit-house/edit-h
 import { EditRoomComponent } from './case-study/facility/edit/edit-room/edit-room.component';
 import { EditVillaComponent } from './case-study/facility/edit/edit-villa/edit-villa.component';
 import { EditCustomerComponent } from './case-study/customer/edit-customer/edit-customer.component';
+import { NghichCssComponent } from './case-study/nghich-css/nghich-css.component';
+import { Ss4HackerNewComponent } from './ss4-hacker-new/ss4-hacker-new.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +38,8 @@ import { EditCustomerComponent } from './case-study/customer/edit-customer/edit-
     EditRoomComponent,
     EditVillaComponent,
     EditCustomerComponent,
+    NghichCssComponent,
+    Ss4HackerNewComponent,
   ],
   imports: [
     BrowserModule,

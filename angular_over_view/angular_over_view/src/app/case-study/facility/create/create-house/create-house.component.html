@@ -1,13 +1,14 @@
+<div style="background-image: linear-gradient(0,aliceblue,#86b7fe); height: 65vh">
 <h3>Add house</h3>
 <p>
-  <a>
+  <a class="btn btn-warning">
     Come back
   </a>
 </p>
 <div id="form">
   <form action="@{/facility/save}" method="post">
     <input type="hidden">
-    <table>
+    <table class="table table-sm">
       <tr>
         <td><span>Facility type</span></td>
         <td><select>
@@ -52,8 +53,8 @@
         <td><span>	Number of floors</span></td>
         <td><input type="text"></td>
       </tr>
-
     </table>
     <input type="submit" value="Save"/>
   </form>
+</div>
 </div>
