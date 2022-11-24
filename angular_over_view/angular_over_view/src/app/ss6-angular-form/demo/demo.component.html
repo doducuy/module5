@@ -1,0 +1,59 @@
+<div class="container">
+  <h2>Create Student</h2>
+  <form [formGroup]="rfStudent" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label class="form-label">Name</label>
+      <input formControlName="name" type="text" class="form-control"
+             [ngClass]="rfStudent.controls['name'].invalid ? 'is-invalid': 'is-valid'">
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+      <div class="invalid-feedback">
+        <div *ngIf="rfStudent.controls['name'].errors?.required && (rfStudent.controls['name'].touched)">
+          Tên Không Được Để Trống!
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Point</label>
+      <input formControlName="point" type="text" class="form-control"
+             [ngClass]="rfStudent.controls['point'].invalid? 'is-invalid' : 'is-valid'">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Address</label>
+      <input formControlName="address" type="text" class="form-control"
+             [ngClass]="rfStudent.controls['address'].invalid? 'is-invalid' : 'is-valid'">
+    </div>
+
+    <div formArrayName="address_option">
+      <div class="mb-3" *ngFor="let item of address_option.controls; let i= index">
+        <label class="form-label">Address Option {{i + 1}}</label>
+        <input [formControlName]="i" type="text" class="form-control">
+      </div>
+    </div>
+
+    <div class="text right mt-3">
+    <button class="btn btn-success" (click)="addAddressOption()">+</button>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Password</label>
+      <input formControlName="password" type="password" class="form-control"
+             [ngClass]="rfStudent.controls['password'].invalid? 'is-invalid' : 'is-valid'">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Confirm Password</label>
+      <input formControlName="confPassword" type="password" class="form-control"
+             [ngClass]="rfStudent.errors?.reConfirmPassValidName ? 'is-invalid': 'is-valid'">
+
+      <div *ngIf="rfStudent.errors?.reConfirmPassValidName" class="invalid-feedback">
+        Password Don't Match Confirm Password!!!
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary" [disabled]="!rfStudent.valid">Submit</button>
+  </form>
+</div>

@@ -1,4 +1,4 @@
- interface Article {
-  title?: string;
-  url?: string;
-}
+//  interface Article {
+//   title?: string;
+//   url?: string;
+// }

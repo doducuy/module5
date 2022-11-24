@@ -7,11 +7,11 @@ import {Component, OnInit} from '@angular/core';
 })
 export class Ss3ColorPickerComponent implements OnInit {
 
-  red: any=0;
-  green: any=0;
-  blue: any=0;
-  backGroundColor:any="rgb(0,0,0)"
-  fontSize:any= 14;
+  red: any = 0;
+  green: any = 0;
+  blue: any = 0;
+  backGroundColor: any = 'rgb(0,0,0)';
+  fontSize: any = 14;
 
   constructor() {
   }
@@ -20,6 +20,6 @@ export class Ss3ColorPickerComponent implements OnInit {
   }
 
   setColor() {
-    this.backGroundColor = "rgb("+this.red+", "+this.green+", "+this.blue+")";
+    this.backGroundColor = 'rgb(' + this.red + ', ' + this.green + ', ' + this.blue + ')';
   }
 }

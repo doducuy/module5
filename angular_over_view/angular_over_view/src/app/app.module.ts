@@ -1,12 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
 import { Ss3ColorPickerComponent } from './ss3-color-picker/ss3-color-picker.component';
 import { Ss3CalculatorComponent } from './ss3-calculator/ss3-calculator.component';
 import { HomeComponent } from './case-study/home/home.component';
 import { FacilityComponent } from './case-study/facility/facility.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { CreateHouseComponent } from './case-study/facility/create/create-house/create-house.component';
 import { CreateRoomComponent } from './case-study/facility/create/create-room/create-room.component';
 import { CreateVillaComponent } from './case-study/facility/create/create-villa/create-villa.component';
@@ -19,7 +18,7 @@ import { EditRoomComponent } from './case-study/facility/edit/edit-room/edit-roo
 import { EditVillaComponent } from './case-study/facility/edit/edit-villa/edit-villa.component';
 import { EditCustomerComponent } from './case-study/customer/edit-customer/edit-customer.component';
 import { NghichCssComponent } from './case-study/nghich-css/nghich-css.component';
-import { Ss4HackerNewComponent } from './ss4-hacker-new/ss4-hacker-new.component';
+import { DemoComponent } from './ss6-angular-form/demo/demo.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,11 +38,12 @@ import { Ss4HackerNewComponent } from './ss4-hacker-new/ss4-hacker-new.component
     EditVillaComponent,
     EditCustomerComponent,
     NghichCssComponent,
-    Ss4HackerNewComponent,
+    DemoComponent,
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

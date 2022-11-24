@@ -11,5 +11,39 @@
 <!--<app-edit-villa></app-edit-villa>-->
 <!--<app-edit-customer></app-edit-customer>-->
 <!--<app-nghich-css></app-nghich-css>-->
+<!--<div class="card" style="width: 18rem;">-->
+<!--  <div class="card-header bg-warning" style="text-align: center">Parent Component</div>-->
+<!--  <div class="card-body">-->
+<!--    <h5 class="card-title">List Student</h5>-->
+<!--    <div class="card-text">-->
+<!--      <table class="table table-striped">-->
+<!--        <tr>-->
+<!--          <td>#</td>-->
+<!--          <td>Tên</td>-->
+<!--          <td>Giới Tính</td>-->
+<!--          <td>Điểm</td>-->
+<!--        </tr>-->
+<!--        <tr *ngFor="let item of students; let i=index" (click)="getStudent(item)">-->
+<!--          <td>{{i + 1}}</td>-->
+<!--          <td>{{item.name}}</td>-->
+<!--          <td *ngIf="item.gender==0">Male</td>-->
+<!--          <td *ngIf="item.gender==1">FeMale</td>-->
+<!--          <td *ngIf="item.gender==2">LGBT</td>-->
+<!--          <td [ngStyle]="{'color': item.point >75 ? 'red':'','font-weight':'bold'}">-->
+<!--            <span *ngIf="item.point>75, else elseBlock">Pass</span>-->
+<!--            <ng-template #elseBlock>-->
+<!--              <span>Fail</span>-->
+<!--            </ng-template>-->
+<!--          </td>-->
+<!--        </tr>-->
+<!--      </table>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+<!--<app-countdown></app-countdown>-->
+<!--<app-vote></app-vote>-->
+<app-demo></app-demo>
 <app-footer></app-footer>
+
+
 
