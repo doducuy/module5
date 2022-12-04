@@ -1,0 +1,68 @@
+<h2 style="color: cadetblue; text-align: center">Student List</h2>
+<div>
+  <button class="btn btn-outline-info" style="margin-right: 3px" routerLink="/create">+Create</button>
+  <div class="d-flex align-items-center mt-2">
+    <input class="form-control w-auto" placeholder="Enter name search" #name>
+    <button class="btn btn-outline-info mx-2" (click)="search(name.value)">Search</button>
+  </div>
+
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <td>#</td>
+      <td>Name</td>
+      <td>Gender</td>
+      <td>Point</td>
+      <td>Class Name</td>
+      <td>Action</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of students| paginate:{itemsPerPage: 5, currentPage: page}; let i =index">
+      <td>{{i + 1}}</td>
+      <td>{{item.name}}</td>
+      <td [ngSwitch]="item.gender">
+        <span *ngSwitchCase="0">Female</span>
+        <span *ngSwitchCase="1">Male</span>
+        <span *ngSwitchCase="2">LGBT</span>
+      </td>
+      <td>{{item.point}}</td>
+      <td [ngSwitch]="item.className.id">
+        <span *ngSwitchCase="1">C0622G1</span>
+        <span *ngSwitchCase="2">C0722G1</span>
+        <span *ngSwitchCase="3">C0822G1</span>
+      </td>
+      <td>
+        <!-- Modal -->
+        <button class="btn btn-outline-info" style="margin-right: 3px" [routerLink]="['/edit',item.id]">Edit</button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Bạn có muốn xóa <span style="color: red">{{item.name}}</span> không?</p>
+              </div>
+              <div class="modal-footer">
+                <button id="close-modal-delete" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close
+                </button>
+                <button type="button" class="btn btn-info" (click)="deleteStudent(item.id,item.name)">Xóa</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Xóa
+        </button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  <pagination-controls (pageChange)="page = $event"></pagination-controls>
+</div>
+
+
+

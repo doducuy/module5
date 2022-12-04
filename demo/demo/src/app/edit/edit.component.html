@@ -1,0 +1,36 @@
+<h2>Edit Student</h2>
+<div style="width: 400px">
+  <form class="form-group" [formGroup]="rfStudentEdit" (ngSubmit)="onSubmit()" *ngIf="rfStudentEdit">
+    <div>
+      <input type="hidden" formControlName="id">
+    </div>
+
+    <div>
+      <label class="form-label">Name:</label>
+      <input type="text" formControlName="name" class="form-control">
+    </div>
+
+    <div>
+      <label class="form-label">Gender:</label>
+      <select formControlName="gender" class="form-control">
+          <option value="0">Female</option>
+          <option value="1">Male</option>
+          <option value="2">LGBT</option>
+      </select>
+    </div>
+
+    <div>
+      <label class="form-label">Point:</label>
+      <input type="number" formControlName="point" class="form-control">
+    </div>
+
+    <div>
+      <label class="form-label">Class Name:</label>
+      <select formControlName="className" class="form-select">
+        <option *ngFor="let item of classStudents" [ngValue]="item">{{item.name}}</option>
+      </select>
+    </div>
+
+    <button type="submit" class="btn btn-outline-info">Save</button>
+  </form>
+</div>

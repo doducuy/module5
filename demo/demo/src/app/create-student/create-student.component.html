@@ -1,0 +1,43 @@
+<div class="card" style="width: 30rem;">
+  <div class="card-header bg-success" style="color: white;">Create Student</div>
+  <div class="card-body">
+    <div class="card-text">
+      <button class="btn btn-outline-info" style="margin-top: 2px" routerLink="/list">Back List!</button>
+      <p style="color: red">{{mess}}</p>
+      <form class="form-group" [formGroup]="rfCreateStudent" (ngSubmit)="saveStudent()">
+        <div>
+          <input class="form-control" formControlName="id" type="hidden">
+        </div>
+        <div>
+          <label class="form-label">Name</label>
+          <input type="text" class="form-control" formControlName="name">
+        </div>
+
+        <div>
+          <label class="form-label">Gender</label>
+          <select class="form-select" formControlName="gender">
+            <option [value]="''">Choose Gender</option>
+            <option [value]="0">FeMale</option>
+            <option [value]="1">Male</option>
+            <option [value]="2">LGBT</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="form-label">Point</label>
+          <input type="number" class="form-control" formControlName="point">
+        </div>
+
+        <div>
+          <label class="form-label">Class Name</label>
+          <select class="form-select" formControlName="className">
+            <option [value]="''">Choose Class Name</option>
+            <option *ngFor="let item of classStudents" [ngValue]="item">{{item.name}}</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-outline-info" style="margin-top: 20px">Save!</button>
+      </form>
+    </div>
+  </div>
+</div>

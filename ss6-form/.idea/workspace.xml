@@ -20,7 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e87f8f00-e329-4ebe-a246-ed6e0ef556d8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ss6-form/src/app/app.component.spec.ts" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo/src/app/data/data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../angular_over_view/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../angular_over_view/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../angular_over_view/angular_over_view/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../angular_over_view/angular_over_view/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ss6-form/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ss6-form/src/app/app.module.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +44,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../angular_over_view" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="ts.external.directory.path" value="D:\CODEGYM\module5\ss6-form\ss6-form\node_modules\typescript\lib" />
   </component>
   <component name="SvnConfiguration">
@@ -54,6 +64,9 @@
       <option name="presentableId" value="Default" />
       <updated>1669296665820</updated>
       <workItem from="1669296668519" duration="356000" />
+      <workItem from="1669297117405" duration="1229000" />
+      <workItem from="1669606747477" duration="666000" />
+      <workItem from="1669795842947" duration="15000" />
     </task>
     <servers />
   </component>
@@ -70,5 +83,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1669795856760">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1669795856760" />
   </component>
 </project>

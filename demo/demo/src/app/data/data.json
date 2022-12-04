@@ -1,0 +1,58 @@
+{
+  "students": [
+    {
+      "id": 17,
+      "name": "a sang",
+      "gender": "1",
+      "point": 2,
+      "className": {
+        "id": 1,
+        "name": "C0622G1"
+      }
+    },
+    {
+      "id": 18,
+      "name": "sadsa",
+      "gender": "1",
+      "point": 2,
+      "className": {
+        "id": 2,
+        "name": "C0722G1"
+      }
+    },
+    {
+      "id": 20,
+      "name": "23h 59",
+      "gender": "2",
+      "point": 12,
+      "className": {
+        "id": 2,
+        "name": "C0722G1"
+      }
+    },
+    {
+      "id": 21,
+      "name": "0h 23",
+      "gender": "0",
+      "point": 45,
+      "className": {
+        "id": 3,
+        "name": "C0822G1"
+      }
+    }
+  ],
+  "className": [
+    {
+      "id": 1,
+      "name": "C0622G1"
+    },
+    {
+      "id": 2,
+      "name": "C0722G1"
+    },
+    {
+      "id": 3,
+      "name": "C0822G1"
+    }
+  ]
+}

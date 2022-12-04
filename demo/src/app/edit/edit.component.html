@@ -1,0 +1,32 @@
+<div class="card" style="width: 18rem;">
+  <div class="card-header bg-success" style="color: white;">Edit Student</div>
+  <div class="card-body">
+    <div class="card-text">
+      <form class="form-group" [formGroup]="studentRf" (ngSubmit)="saveStudent()">
+        <div>
+          <input class="form-control" formControlName="id" type="hidden">
+        </div>
+        <div>
+          <label class="form-label">Name</label>
+          <input type="text" class="form-control" formControlName="name">
+        </div>
+
+        <div>
+          <label class="form-label">Gender</label>
+          <select class="form-control" formControlName="gender">
+            <option value="0">FeMale</option>
+            <option value="1">Male</option>
+            <option value="2">LGBT</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="form-label">Point</label>
+          <input type="number" class="form-control" formControlName="point">
+        </div>
+
+        <button type="submit" class="btn btn-outline-info">Save!</button>
+      </form>
+    </div>
+  </div>
+</div>

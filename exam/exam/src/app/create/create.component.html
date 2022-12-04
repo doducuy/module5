@@ -1,0 +1,61 @@
+<div class="card" style="width: 30rem;">
+  <div class="card-header bg-success" style="color: white;">Thêm Mới Vé</div>
+  <div class="card-body">
+    <div class="card-text">
+      <button class="btn btn-outline-info" style="margin-top: 2px" routerLink="/list">Back List!</button>
+      <p style="color: red">{{mess}}</p>
+      <form class="form-group" [formGroup]="rfVeXe" (ngSubmit)="saveVeXe()">
+        <div>
+          <input class="form-control" formControlName="id" type="hidden">
+        </div>
+        <div>
+          <label class="form-label">Giá Vé:</label>
+          <input type="number" class="form-control" formControlName="giaVe"
+                 [ngClass]="rfVeXe.controls['giaVe'].invalid? 'is-invalid': 'is-valid'">
+        </div>
+
+        <div>
+          <label class="form-label">Điểm đi:</label>
+          <input type="text" class="form-control" formControlName="diemDi"
+          [ngClass]="rfVeXe.controls['diemDi'].invalid? 'is-invalid': 'is-valid'">
+        </div>
+
+        <div>
+          <label class="form-label">Điểm đến:</label>
+          <input type="text" class="form-control" formControlName="diemDen"
+                 [ngClass]="rfVeXe.controls['diemDen'].invalid? 'is-invalid': 'is-valid'">
+        </div>
+
+        <div>
+          <label class="form-label">Ngày khởi hành:</label>
+          <input type="date" class="form-control" formControlName="ngayKhoiHanh"
+                 [ngClass]="rfVeXe.controls['ngayKhoiHanh'].invalid? 'is-invalid': 'is-valid'">
+        </div>
+
+        <div>
+          <label class="form-label">Giờ khởi hành:</label>
+          <input type="text" class="form-control" formControlName="gioKhoiHanh"
+                 [ngClass]="rfVeXe.controls['gioKhoiHanh'].invalid? 'is-invalid': 'is-valid'">
+        </div>
+
+        <div>
+          <label class="form-label">Nhà xe:</label>
+          <select class="form-select" formControlName="nhaXe"
+                  [ngClass]="rfVeXe.controls['nhaXe'].invalid? 'is-invalid': 'is-valid'">
+            <option [value]="''">Chọn Nhà Xe</option>
+            <option *ngFor="let item of nhaXes" [ngValue]="item">{{item.tenNhaXe}}</option>
+          </select>
+        </div>
+        <div>
+          <label class="form-label">Số Lượng:</label>
+          <input type="number" class="form-control" formControlName="soLuong"
+                 [ngClass]="rfVeXe.controls['soLuong'].invalid? 'is-invalid': 'is-valid'">
+        </div>
+
+        <button type="submit" class="btn btn-outline-info" style="margin-top: 20px">Save!</button>
+
+      </form>
+
+    </div>
+  </div>
+</div>

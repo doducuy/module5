@@ -1,0 +1,106 @@
+{
+  "veXes": [
+    {
+      "id": 1,
+      "giaVe": 50000,
+      "diemDi": "Sai Gon",
+      "diemDen": "Ha Noi",
+      "ngayKhoiHanh": "12/20/2022",
+      "gioKhoiHanh": "20:00",
+      "nhaXe": {
+        "id": 2,
+        "name": "Trung Tin"
+      },
+      "soLuong": 15
+    },
+    {
+      "id": 2,
+      "giaVe": 50000,
+      "diemDi": "Sai Gon",
+      "diemDen": "Ha Noi",
+      "ngayKhoiHanh": "12/20/2022",
+      "gioKhoiHanh": "20:00",
+      "nhaXe": {
+        "id": 2,
+        "name": "Trung Tin"
+      },
+      "soLuong": 10
+    },
+    {
+      "id": 3,
+      "giaVe": 50000,
+      "diemDi": "Quang Tri",
+      "diemDen": "Da Nang",
+      "ngayKhoiHanh": "12/20/2022",
+      "gioKhoiHanh": "20:00",
+      "nhaXe": {
+        "id": 1,
+        "name": "Trung Nguyen"
+      },
+      "soLuong": 5
+    },
+    {
+      "id": 4,
+      "giaVe": 10000,
+      "diemDi": "hue",
+      "diemDen": "qb",
+      "ngayKhoiHanh": "2022-12-03",
+      "gioKhoiHanh": "12:00",
+      "nhaXe": {
+        "id": 1,
+        "name": "PhuongTrang"
+      },
+      "soLuong": null
+    },
+    {
+      "id": 5,
+      "giaVe": 10000,
+      "diemDi": "thai binh",
+      "diemDen": "daklak",
+      "ngayKhoiHanh": "2022-12-17",
+      "gioKhoiHanh": "2:00",
+      "nhaXe": "1",
+      "soLuong": null
+    },
+    {
+      "id": 6,
+      "giaVe": 12,
+      "diemDi": "a",
+      "diemDen": "a",
+      "ngayKhoiHanh": "2022-12-09",
+      "gioKhoiHanh": "12",
+      "nhaXe": {
+        "id": 3,
+        "name": "Trung Nguyen"
+      },
+      "soLuong": 4
+    },
+    {
+      "id": 7,
+      "giaVe": 99,
+      "diemDi": "hue",
+      "diemDen": "hai phong",
+      "ngayKhoiHanh": "2019-09-09",
+      "gioKhoiHanh": "09:09",
+      "nhaXe": {
+        "id": 3,
+        "name": "Trung Nguyen"
+      },
+      "soLuong": 99
+    }
+  ],
+  "nhaXe": [
+    {
+      "id": 1,
+      "name": "PhuongTrang"
+    },
+    {
+      "id": 2,
+      "name": "Trung Tin"
+    },
+    {
+      "id": 3,
+      "name": "Trung Nguyen"
+    }
+  ]
+}

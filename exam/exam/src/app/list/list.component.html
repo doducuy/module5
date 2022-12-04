@@ -1,0 +1,73 @@
+<h2 style="color: cadetblue; text-align: center"> Danh Sách Vé Xe</h2>
+<div>
+
+  <button class="btn btn-outline-info" style="margin-right: 3px" routerLink="/create">+Create</button>
+  <div class="d-flex align-items-center mt-2">
+    <input class="form-control w-auto" placeholder="Nhập điểm đi" #diemdi>
+    <input class="form-control w-auto" placeholder="Nhập điểm đến" #diemden>
+    <button class="btn btn-outline-info mx-2" (click)="search(diemdi.value,diemden.value)">Search</button>
+  </div>
+
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <td>Điểm đi</td>
+      <td>Điểm đến</td>
+      <td>Giá vé</td>
+      <td>Ngày khởi hành</td>
+      <td>Giờ khởi hành</td>
+      <td>Nhà xe</td>
+      <td>Số lượng</td>
+      <td>Action</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of veXes| paginate:{itemsPerPage: 5, currentPage: page}">
+      <td>{{item.diemDi}}</td>
+      <td>{{item.diemDen}}</td>
+      <td>{{item.giaVe}}</td>
+      <td>{{item.ngayKhoiHanh}}</td>
+      <td>{{item.gioKhoiHanh}}</td>
+      <td [ngSwitch]="item.nhaXe.id" >
+        <span *ngSwitchCase="1">Phuong Trang</span>
+        <span *ngSwitchCase="2">Trung Tin</span>
+        <span *ngSwitchCase="3">Trung Nguyen</span>
+      </td>
+      <td>{{item.soLuong}}</td>
+      <td>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Bạn có muốn đặt vé từ <span style="color: red">{{item.diemDi}}</span> tới
+                  <span style="color: red">{{item.diemDen}}</span> vào
+                  <span style="color: red">{{item.gioKhoiHanh}}</span> ngày
+                  <span style="color: red">{{item.ngayKhoiHanh}}</span> không?</p>
+              </div>
+              <div class="modal-footer">
+                <button id="close-modal-delete" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Không
+                </button>
+                <button type="button" class="btn btn-info" (click)="datVe(item.id)">Có</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Đặt Vé
+        </button>
+      </td>
+
+    </tr>
+    </tbody>
+
+  </table>
+
+  <pagination-controls (pageChange)="page = $event"></pagination-controls>
+
+</div>
